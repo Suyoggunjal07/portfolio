@@ -65,7 +65,7 @@
                         Synapse. Proven track record of delivering effective data visualization solutions 
                         and optimizing data workflows. Strong problem-solving abilities and a passion for 
                         driving business insights through data analytics.</p>
-                    <a href="./suyog Resume.pdf">Download CV</a>
+                    <a href="" id="Download" >Download CV</a>
                 </div>
             </div>
         </div>
@@ -324,6 +324,14 @@
               alert('An error occurred while sending the message. Please try again.');
             });
           });
+            $("#Download").click( function downloadPDF() {
+        var href = "./suyog Resume.pdf";
+        var fileName = "suyog Resume.pdf";
+    
+        var anchor = document.createElement("a");
+        anchor.href = href;
+        anchor.download = fileName;
+        anchor.click();
         });
       </script>
 
