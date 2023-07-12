@@ -42,7 +42,7 @@ section{
   } */
   .dataimg{
     display: flex;
-    padding-top: 10%;
+    padding-top: 7%;
     padding-left: 10%;
     background: url("./images/20421.jpg") no-repeat center;
     height:80vh;
