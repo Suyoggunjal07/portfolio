@@ -324,14 +324,21 @@
               alert('An error occurred while sending the message. Please try again.');
             });
           });
-            $("#Download").click( function downloadPDF() {
-        var href = "./suyog Resume.pdf";
-        var fileName = "suyog Resume.pdf";
-    
-        var anchor = document.createElement("a");
-        anchor.href = href;
-        anchor.download = fileName;
-        anchor.click();
+          
+            $("#Download").click((e) => {
+                downloadPDF();
+                e.preventDefault();
+            })
+            function downloadPDF() {
+            var href = "./suyog Resume.pdf";
+            var fileName = "suyog Resume.pdf";
+
+            var anchor = document.createElement("a");
+            anchor.href = href;
+            anchor.download = fileName;
+            anchor.click();
+
+        };
         });
       </script>
 
